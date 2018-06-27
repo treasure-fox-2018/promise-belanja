@@ -16,7 +16,7 @@ let greenTea = {
   waktu: 1000,
 }
 
-beli(100000, permen)
+beli(20000, permen)
 .then(
   result => {
   console.log(result.msg)
@@ -32,7 +32,7 @@ beli(100000, permen)
   err => {
     return err;
   }
-).then(
+).catch(
   result => {
   console.log(result.msg)
   return beli(result.change, cola)},
