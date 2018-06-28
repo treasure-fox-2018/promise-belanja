@@ -5,12 +5,12 @@ function beli(uang, obj){
       let kembalian = uang - obj.harga
       if (kembalian >= 0) {
         resolve ({
-          msg: console.log(`Saya sudah membeli ${obj.item} uang kembaliannya ${kembalian}`),
+          msg: `Saya sudah membeli ${obj.item} uang kembaliannya ${kembalian}`,
           change: kembalian
       })
       }else{
         reject ({
-          msg: console.log(`uang gk cukup nih buat beli ${obj.item}, kurang ${obj.harga - uang}`),
+          msg: `uang gk cukup nih buat beli ${obj.item}, kurang ${obj.harga - uang}`,
           change: uang
         })
       }
